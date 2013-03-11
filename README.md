@@ -16,6 +16,13 @@ Contributors
 *Douglas Crockford (JSON-Java, json.org) <https://github.com/douglascrockford/JSON-java>
 
 
+Libraries:
+
+set these jar files in the classpath.
+
+1: common-codec1.3.jar
+2: signport-core1.1-SNAPSHOT.jar
+
 Instruction:
 
 This project has two different way to access twitter recent tweets.

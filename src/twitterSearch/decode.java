@@ -1,9 +1,12 @@
+// Author: Nilesh Singh, George Mason University
+//This class provides a method to take a string input and returns the valid URL 
+
 package twitterSearch;
 public class decode {
 
 	public static String returnDecoded(String str){
-		
-		//char[] charURL=str.toCharArray();
+	//Requires: A string input
+	//Effects: Returns a Valid URL string
 		
 		StringBuffer sb=new StringBuffer();
 		for(int i=11;i<str.length();i++){
@@ -17,7 +20,6 @@ public class decode {
 			
 			else{
 				
-			//	int start=i;
 				StringBuilder test=new StringBuilder();
 				test.append("&");
 				while(str.charAt(i+end)!=';')
@@ -25,22 +27,16 @@ public class decode {
 					end++;
 					test.append(str.charAt(i+end));
 					}
-				
-				//test.append(";");
-				
-			//	System.out.println("found"+test.toString());
-			//	System.out.println();
+
 				if((test.toString()).equals("&gt;"))
 					{
 					
-				//	System.out.println("found");
+				
 					break;
 					}
-			//	System.out.println(end);
+			
 				i=i+end;
 			}
-			
-			
 			
 		}
 		
